@@ -3,12 +3,6 @@ from datetime import datetime
 import json
 
 
-#mydb = mysql.connector.connect(user='administra', 
-#        password='U5u4r1o', host='148.204.64.161', port='3306', database='sensores3')
-
-mydb = mysql.connector.connect(user='root',password='', host='localhost', port='3306', database='sensores')
-
-
 datos = open(".\\datos\\da-batC.csv",'w')
 datos.write("dFECHAINI\tCELULAR\tdbstart\tdbend\tdFECHAFIN\n")
 mycursor = mydb.cursor()
