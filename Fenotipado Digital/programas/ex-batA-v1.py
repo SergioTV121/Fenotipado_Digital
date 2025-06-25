@@ -2,12 +2,6 @@ import mysql.connector
 from datetime import datetime
 import json
 
-
-#mydb = mysql.connector.connect(user='administra', 
-#        password='U5u4r1o', host='148.204.64.161', port='3306', database='sensores3')
-
-mydb = mysql.connector.connect(user='root',password='', host='localhost', port='3306', database='sensores')
-
 datos = open("./datos/da-batA.csv",'w')
 datos.write("FECHA,CELULAR,bstatus,blevel,bscale,bvoltage,btemperature,badaptor,bhealth,btechnology\n")
 mycursor = mydb.cursor()
